@@ -127,10 +127,6 @@ These settings provide the best balance for most images:
 7. **Color Mapping** — RGB values assigned to each character (if enabled)
 8. **Glow Rendering** — Multi-layer shadow effects (PNG export)
 
-<p align="center">
-  <img src="images/test-3.png" alt="Test Banner" width="100%" />
-</p>
-
 
 ## Tips & Tricks
 
