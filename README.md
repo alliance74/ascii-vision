@@ -29,6 +29,10 @@ These settings provide the best balance for most images:
 | Invert Character Ramp | ✓ ON | Natural light/dark mapping |
 | Colored Output | ✗ OFF | Grayscale for contrast |
 
+<p align="center">
+  <img src="images/test-3.png" alt="AsciiVision Demo" width="500"/>
+</p
+
 ## Control Breakdown
 
 ### BASIC Tab
@@ -147,7 +151,7 @@ Found an issue? Have an idea? Submit a PR to [github.com/ah4ddd/ascii-vision](ht
 ---
 
 <p align="center">
-  <img src="test.png" alt="AsciiVision Demo" width="500"/>
+  <img src="images/test.png" alt="AsciiVision Demo" width="500"/>
 </p
 
 **Made with ❤️ for ASCII enthusiasts**
