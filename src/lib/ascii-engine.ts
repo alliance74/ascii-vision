@@ -50,7 +50,7 @@ export async function convertToAscii(
     const ctx = canvas.getContext('2d', { willReadFrequently: true });
     if (!ctx) throw new Error('Could not get canvas context');
 
-    // 1. Calculate target grid dimensions (Coarser by default)
+    // 1. Calculate target grid dimensions
     const targetWidth = options.width;
     const scale = targetWidth / image.width;
     const targetHeight = Math.floor((image.height * scale) / options.aspectRatio);

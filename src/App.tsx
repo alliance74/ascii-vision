@@ -27,6 +27,23 @@ const FULL_RAMP = QUALITY_RAMP;
 const SHORT_RAMP = " .:-=+*#%@";
 const BLOCK_RAMP = " ░▒▓█";
 
+const DEFAULT_OPTIONS: AsciiOptions = {
+    width: 300,
+    brightness: 1.2,
+    contrast: 2.0,
+    gamma: 1.2,
+    ramp: DEFAULT_RAMP,
+    invert: true,
+    colorMode: 'grayscale',
+    aspectRatio: 1.8,
+    dithering: true,
+    sharpen: 0,
+    mode: 'classic',
+    singleChar: '@',
+    neonPalette: 'matrix',
+    glowIntensity: 0.8
+};
+
 export default function App() {
     const [image, setImage] = useState<HTMLImageElement | null>(null);
     const [previewUrl, setPreviewUrl] = useState<string | null>(null);
@@ -35,22 +52,7 @@ export default function App() {
     const [showControls, setShowControls] = useState(true);
     const [activeTab, setActiveTab] = useState<'basic' | 'advanced' | 'modes'>('basic');
 
-    const [options, setOptions] = useState<AsciiOptions>({
-        width: 90, // Coarse default for better structural recognition
-        brightness: 1.0,
-        contrast: 1.2, // Punchy contrast by default
-        gamma: 1.0,
-        ramp: DEFAULT_RAMP,
-        invert: true,
-        colorMode: 'grayscale',
-        aspectRatio: 2.0,
-        dithering: false, // Dithering disabled by default for "Real ASCII" look
-        sharpen: 0,
-        mode: 'classic',
-        singleChar: '@',
-        neonPalette: 'matrix',
-        glowIntensity: 0.8
-    });
+    const [options, setOptions] = useState<AsciiOptions>(DEFAULT_OPTIONS);
 
     const fileInputRef = useRef<HTMLInputElement>(null);
     const containerRef = useRef<HTMLDivElement>(null);
@@ -198,22 +200,7 @@ export default function App() {
     };
 
     const handleReset = () => {
-        setOptions({
-            width: 90,
-            brightness: 1.0,
-            contrast: 1.2,
-            gamma: 1.0,
-            ramp: STRONG_RAMP,
-            invert: true,
-            colorMode: 'grayscale',
-            aspectRatio: 2.0,
-            dithering: false,
-            sharpen: 0,
-            mode: 'classic',
-            singleChar: '@',
-            neonPalette: 'matrix',
-            glowIntensity: 0.8
-        });
+        setOptions(DEFAULT_OPTIONS);
     };
 
     return (
@@ -641,4 +628,3 @@ function ControlSlider({
         </div>
     );
 }
-

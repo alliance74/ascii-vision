@@ -24,7 +24,7 @@ These settings provide the best balance for most images:
 | Contrast | 2.00 | Sharp tonal separation |
 | Gamma | 1.20 | Natural midtone curve |
 | Sharpness | 0.00 | Clean baseline (increase if blurry) |
-| Aspect Ratio | 2.00 | Corrects character squareness |
+| Aspect Ratio | 1.80 | Corrects character squareness |
 | Dithering | ✓ ON | Smoother tonal gradation |
 | Invert Character Ramp | ✓ ON | Natural light/dark mapping |
 | Colored Output | ✗ OFF | Grayscale for contrast |
@@ -36,24 +36,24 @@ These settings provide the best balance for most images:
 **Output Width** (20-300 chars)
 - Lower = blockier, faster
 - Higher = finer detail, larger file
-- Default: 90 (good compromise)
+- Default: 300 (high-detail first render)
 
 **Brightness** (0-2)
 - Adjusts overall image lightness
 - 1.0 = original
-- 1.2-1.5 = recommended range
+- Default: 1.2 for punchy visible detail
 
 **Contrast** (0-2)
 - Separates light and dark areas
 - Higher = more dramatic
-- 2.0+ for high-impact ASCII
+- Default: 2.0 for high-impact ASCII
 
 ### ADVANCED Tab
 
 **Gamma** (0.5-2)
 - Adjusts midtone response
 - 1.0 = linear
-- 1.1-1.3 = natural curves
+- Default: 1.2 for a natural curve
 
 **Sharpness** (0-2)
 - 0 = soft/smooth
@@ -62,16 +62,18 @@ These settings provide the best balance for most images:
 
 **Aspect Ratio** (0.5-3)
 - Corrects stretched/squished look
-- 2.0 = standard character ratio
+- Default: 1.8 for balanced character squareness
 - Adjust based on your font
 
 **Dithering (Floyd-Steinberg)**
 - Adds noise/pattern for smoother tones
+- Default: ON
 - Better gradation with fewer characters
 - Useful for complex images
 
 **Colored Output**
 - Maps original RGB to colored ASCII
+- Default: OFF
 - Off = grayscale (sharper contrast)
 - On = artistic multi-color look
 
