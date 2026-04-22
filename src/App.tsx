@@ -44,6 +44,32 @@ const DEFAULT_OPTIONS: AsciiOptions = {
     glowIntensity: 0.8
 };
 
+function AppLogo() {
+    return (
+        <svg
+            className="w-6 h-6 text-white"
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+        >
+            <path
+                d="M9.5 4.5 3.8 12l5.7 7.5"
+                stroke="currentColor"
+                strokeWidth="3.6"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            />
+            <path
+                d="m14.5 4.5 5.7 7.5-5.7 7.5"
+                stroke="currentColor"
+                strokeWidth="3.6"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            />
+        </svg>
+    );
+}
+
 export default function App() {
     const [image, setImage] = useState<HTMLImageElement | null>(null);
     const [previewUrl, setPreviewUrl] = useState<string | null>(null);
@@ -220,8 +246,27 @@ export default function App() {
                     >
                         <div className="p-6 border-b border-white/5 flex items-center justify-between">
                             <div className="flex items-center gap-2">
-                                <div className="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center">
-                                    <Zap className="w-5 h-5 text-white" />
+                                <div className="relative w-8 h-8 overflow-hidden rounded-lg bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-[0_0_18px_rgba(37,99,235,0.28)]">
+                                    <div className="absolute -inset-2 flex items-center justify-center text-[5px] leading-[4px] font-mono font-black text-white/18 tracking-[0.6px] rotate-[-12deg] select-none">
+                                        <span className="block w-16 text-center">
+                                            A@#%*+=:.V
+                                            <br />
+                                            #vXo/|()1@
+                                            <br />
+                                            .:-=+*#%@$
+                                            <br />
+                                            @WMB8&%#*
+                                            <br />
+                                            zcvunxrjf/
+                                            <br />
+                                            +~&lt;&gt;i!lI;
+                                            <br />
+                                            %$@#AV:+=
+                                        </span>
+                                    </div>
+                                    <div className="relative z-10">
+                                        <AppLogo />
+                                    </div>
                                 </div>
                                 <h1 className="font-display font-bold text-xl text-white tracking-tight">AsciiVision</h1>
                             </div>
