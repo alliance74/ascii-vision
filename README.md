@@ -30,8 +30,8 @@ These settings provide the best balance for most images:
 | Colored Output | ✗ OFF | Grayscale for contrast |
 
 <p align="center">
-  <img src="images/test-3.png" alt="AsciiVision Demo" width="500"/>
-</p
+  <img src="images/test-3.png" alt="Test Banner" width="100%" />
+</p>
 
 ## Control Breakdown
 
@@ -151,7 +151,7 @@ Found an issue? Have an idea? Submit a PR to [github.com/ah4ddd/ascii-vision](ht
 ---
 
 <p align="center">
-  <img src="images/test.png" alt="AsciiVision Demo" width="500"/>
-</p
+  <img src="images/test.png" alt="Test Banner" width="100%" />
+</p>
 
 **Made with ❤️ for ASCII enthusiasts**
