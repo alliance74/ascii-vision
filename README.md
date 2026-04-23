@@ -1,4 +1,7 @@
-# AsciiVision
+<p align="center">
+  <img src="images/test.png" alt="AsciiVision Banner" width="100%" />
+</p>
+
 
 ASCII art converter with neon effects, creative controls, and real-time rendering.
 
